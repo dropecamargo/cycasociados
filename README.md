@@ -1,2 +1,2 @@
 # cycasociados
-Official repository cycasociados.com.co
+Repositorio oficial cycasociados.com.co
