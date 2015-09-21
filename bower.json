@@ -1,0 +1,21 @@
+{
+  "name": "cycasociados",
+  "version": "1.0.0",
+  "homepage": "https://github.com/dropecamargo/cycasociados",
+  "authors": [
+    "Krobing <linkrobin1024@gmail.com>"
+  ],
+  "description": "aplicación front-end de cycasociados.com.co",
+  "main": "index.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

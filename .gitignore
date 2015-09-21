@@ -3,5 +3,8 @@
 .DS_Store
 Thumbs.db
 .phpintel
+npm-debug.log
+
 
 #wordpress
+node_modules
