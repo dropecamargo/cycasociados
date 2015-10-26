@@ -21,12 +21,12 @@ charset = utf-8
 indent_style = space
 
 # Matches the exact files either package.json or .travis.yml
-[{Gulpfile.js,package.json,bower.json,.bowerrc,.jshintrc}]
+[{Gulpfile.js,Gruntfile.js,package.json,bower.json,.bowerrc,.jshintrc}]
 indent_size = 2
 insert_final_newline = false
 
 # scss, less ans css files
-[app/stylesheets/**/*.{scss,less,css}]
+[app/less/**/*.{scss,less,css}]
 indent_style = space
 indent_size = 2
 

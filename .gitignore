@@ -8,3 +8,4 @@ npm-debug.log
 
 #wordpress
 node_modules
+app/libs
