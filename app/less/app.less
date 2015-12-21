@@ -1,6 +1,6 @@
 // Make sure the charset is set appropriately
 @charset "UTF-8";
-@path-boot: "bootstrap/less";
+@path-bootstrap: "bootstrap/less";
 
 @import "site/base/settings";
 
@@ -11,70 +11,74 @@
 */
 
 // Core variables and mixins
-@import "@{path-boot}/variables.less";
-@import "@{path-boot}/mixins.less";
+@import "@{path-bootstrap}/variables.less";
+@import "@{path-bootstrap}/mixins.less";
+
+@import "site/base/fonts";
+@import "site/base/variables";
 
 // Reset and dependencies
-@import "@{path-boot}/normalize.less";
-@import "@{path-boot}/print.less";
-@import "@{path-boot}/glyphicons.less";
+@import "@{path-bootstrap}/normalize.less";
+@import "@{path-bootstrap}/print.less";
+@import "@{path-bootstrap}/glyphicons.less";
 
 // Core CSS
-@import "@{path-boot}/scaffolding.less";
-@import "@{path-boot}/type.less";
-@import "@{path-boot}/code.less";
-@import "@{path-boot}/grid.less";
-@import "@{path-boot}/tables.less";
-@import "@{path-boot}/forms.less";
-@import "@{path-boot}/buttons.less";
+@import "@{path-bootstrap}/scaffolding.less";
+@import "@{path-bootstrap}/type.less";
+@import "@{path-bootstrap}/code.less";
+@import "@{path-bootstrap}/grid.less";
+@import "@{path-bootstrap}/tables.less";
+@import "@{path-bootstrap}/forms.less";
+@import "@{path-bootstrap}/buttons.less";
 
 // Components
-@import "@{path-boot}/component-animations.less";
-@import "@{path-boot}/dropdowns.less";
-@import "@{path-boot}/button-groups.less";
-@import "@{path-boot}/input-groups.less";
-@import "@{path-boot}/navs.less";
-@import "@{path-boot}/navbar.less";
-@import "@{path-boot}/breadcrumbs.less";
-@import "@{path-boot}/pagination.less";
-@import "@{path-boot}/pager.less";
-@import "@{path-boot}/labels.less";
-@import "@{path-boot}/badges.less";
-@import "@{path-boot}/jumbotron.less";
-@import "@{path-boot}/thumbnails.less";
-@import "@{path-boot}/alerts.less";
-@import "@{path-boot}/progress-bars.less";
-@import "@{path-boot}/media.less";
-@import "@{path-boot}/list-group.less";
-@import "@{path-boot}/panels.less";
-@import "@{path-boot}/responsive-embed.less";
-@import "@{path-boot}/wells.less";
-@import "@{path-boot}/close.less";
+@import "@{path-bootstrap}/component-animations.less";
+@import "@{path-bootstrap}/dropdowns.less";
+@import "@{path-bootstrap}/button-groups.less";
+@import "@{path-bootstrap}/input-groups.less";
+@import "@{path-bootstrap}/navs.less";
+@import "@{path-bootstrap}/navbar.less";
+@import "@{path-bootstrap}/breadcrumbs.less";
+@import "@{path-bootstrap}/pagination.less";
+@import "@{path-bootstrap}/pager.less";
+@import "@{path-bootstrap}/labels.less";
+@import "@{path-bootstrap}/badges.less";
+@import "@{path-bootstrap}/jumbotron.less";
+@import "@{path-bootstrap}/thumbnails.less";
+@import "@{path-bootstrap}/alerts.less";
+@import "@{path-bootstrap}/progress-bars.less";
+@import "@{path-bootstrap}/media.less";
+@import "@{path-bootstrap}/list-group.less";
+@import "@{path-bootstrap}/panels.less";
+@import "@{path-bootstrap}/responsive-embed.less";
+@import "@{path-bootstrap}/wells.less";
+@import "@{path-bootstrap}/close.less";
 
 // Components w/ JavaScript
-@import "@{path-boot}/modals.less";
-@import "@{path-boot}/tooltip.less";
-@import "@{path-boot}/popovers.less";
-@import "@{path-boot}/carousel.less";
+@import "@{path-bootstrap}/modals.less";
+@import "@{path-bootstrap}/tooltip.less";
+@import "@{path-bootstrap}/popovers.less";
+@import "@{path-bootstrap}/carousel.less";
 
 // Utility classes
-@import "@{path-boot}/utilities.less";
-@import "@{path-boot}/responsive-utilities.less";
+@import "@{path-bootstrap}/utilities.less";
+@import "@{path-bootstrap}/responsive-utilities.less";
 
 // theme bootstrap
-@import "@{path-boot}/theme.less";
+@import "@{path-bootstrap}/theme.less";
 
 // ===================
 // Libraries less file
 // ===================
 @import "lesshat/build/lesshat.less";
 
-/* App Components Styles*/
+/**
+* App Components Styles
+* Frontend Krobing
+*/
 
-// This includes all of the global elements that are needed to work with any of the other files.
-  @import "site/base/variables";
+// here includes all of the global elements that are needed to work with any of the other files.
   @import "site/base/colors";
-  @import "site/base/fonts";
   @import "site/base/type";
   @import "site/base/sprite";
   @import "site/base/icons";
@@ -83,17 +87,18 @@
 // -----------------------------
   @import "site/base/mixins";
   @import "site/base/vselectors";
-  @import "site/base/globals";
+  @import "site/base/global";
+
 // modules
 // -----------------------------
 
 // layouts
 // ------------------------------
   //name
-
   @import "site/layout/header";
   @import "site/layout/main";
   @import "site/layout/footer";
+
 // states
 // -----------------------------
   @import "site/state/animated";

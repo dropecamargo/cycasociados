@@ -26,8 +26,8 @@ indent_size = 2
 insert_final_newline = false
 
 # scss, less ans css files
-[app/less/**/*.{scss,less,css}]
-indent_style = space
+[app/less/**/**.{scss,less,css}]
+indent_style = tab
 indent_size = 2
 
 #remove final newline

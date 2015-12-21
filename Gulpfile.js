@@ -112,8 +112,9 @@ gulp.task('copy', function () {
 gulp.task('watch', function () {
 
 	livereload.listen({port:8080, host:'localhost', basePath: 'cycasociados'});
-	gulp.watch(['./app/**/**.js', './Gulpfile.js'], ['compress:app']);
-	gulp.watch(['./app/**/**.less'], ['less:app']);
+	gulp.watch(['./app/scripts/**/**.js'], ['compress:app']);
+	gulp.watch(['./app/less/**/**.less'], ['less:app']);
+	gulp.watch(['./Gulpfile.js'], ['compress:app','less:app']);
 
 });
 
