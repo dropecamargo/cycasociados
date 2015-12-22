@@ -24,6 +24,6 @@ if ( get_stylesheet() !== get_template() ) {
 }
 
 function remove_section_customize_register( $wp_customize ) {
-	$wp_customize->remove_control("Our Service");
+	$wp_customize->remove_control("Clients");
 }
 add_action( 'customize_register', 'remove_section_customize_register' );
