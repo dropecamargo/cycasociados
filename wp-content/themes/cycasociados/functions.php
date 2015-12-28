@@ -15,7 +15,7 @@ if ( ! function_exists( 'cycasociados_setup' ) ) :
  * as indicating support for post thumbnails.
  */
 function cycasociados_setup() {
-	remove_theme_mod( 'parallax_one_logos_content' );
+	// remove_theme_mod( 'parallax_one_logos_content' );
 }
 endif; // cycasociados_setup
 add_action( 'after_setup_theme', 'cycasociados_setup' );
@@ -38,7 +38,15 @@ if ( get_stylesheet() !== get_template() ) {
 	} );
 }
 
-function remove_section_customize_register( $wp_customize ) {
-	$wp_customize->remove_control("Clients");
+function cyc_get_file($file){
+	$file_parts = pathinfo($file);
+	$accepted_ext = array('jpg','img','png','css','js');
+	if( in_array($file_parts['extension'], $accepted_ext) ){
+		$file_path = get_stylesheet_directory() . $file;
+		if ( file_exists( $file_path ) ){
+			return esc_url(get_stylesheet_directory_uri() . $file);
+		} else {
+			return esc_url(get_template_directory_uri() . $file);
+		}
+	}
 }
-add_action( 'customize_register', 'remove_section_customize_register' );
