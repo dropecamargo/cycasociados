@@ -3,7 +3,39 @@
 * --------------
 */
 @{wrap-header} {
+
+	// navegation top menu
 	.navbar-inverse {
-		background: @white;
+		background: @bg-color-topmenu;
+		.box-shadow( 0px 1px 8px @steel );
+
+		// main menu
+		.main-navigation {
+
+			font-family: @font-family-novecento;
+
+			a {
+				color: @white;
+			}
+		}
 	}
+
+	// section banner
+	.overlay-layer-wrap {
+		background: rgba(255,255,255, .8);
+		#parallax_header {
+
+			#intro_section_text_1 {
+				color: #577EBC;
+				font-weight: 600;
+				line-height: 1;
+				.font-size-rem(35);
+			}
+
+			#intro_section_text_2 {
+				color: #54545A;
+			}
+		}
+	}
+
 }
