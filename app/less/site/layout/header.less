@@ -18,24 +18,69 @@
 				color: @white;
 			}
 		}
+	
+		.navbar-header {
+			height: @height-topmenu;
+			// logo
+			.navbar-brand {
+				line-height: @height-topmenu;
+				padding: 0;
+				float: left;
+				margin-left: 0;
+
+				img {
+					max-height: 45px;
+					height: auto;
+					width: auto;
+					display: inline-block;
+					vertical-align: middle;
+				}
+			}
+
+			.text-header {
+				display: block !important;
+				float: left;
+				height: 100%;
+				margin-left: 55px;
+
+				#site-title{
+					color: @white;
+					margin-top: 22px;
+					.font-size-rem(20);
+
+					a {
+						color: inherit;
+						&:hover {
+							text-decoration: none;
+						}
+					}
+				}
+
+				#site-description {
+					display: none;
+				}
+			}
+		}
 	}
 
 	// section banner
 	.overlay-layer-wrap {
-		background: rgba(255,255,255, .8);
+		background: rgba(255,255,255, .7);
 		#parallax_header {
 
 			#intro_section_text_1 {
 				color: #577EBC;
 				font-weight: 600;
 				line-height: 1;
-				.font-size-rem(35);
+				margin-bottom: 40px;
+				.font-size-rem(45);
 			}
 
 			#intro_section_text_2 {
-				color: #54545A;
+				color: @text-color;
+				line-height: 1.4;
+				font-weight: lighter;
 			}
 		}
 	}
-
 }
