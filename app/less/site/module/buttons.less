@@ -1,0 +1,34 @@
+// @author http://cycasociados.com.co
+// @frontend @krobing
+// Styles for buttons
+// ----------------------
+
+//
+// variables
+//
+
+// btn xlarge
+@padding-xlarge-vertical: 8px;
+@padding-xlarge-horizontal: 14px;
+@font-size-xlarge: 16px;
+@line-height-xlarge: 1.4;
+@btn-border-radius-xlarge: @border-radius-base;
+
+.btn {
+
+  &.expand {
+  	padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+
+}
+
+.btn-primary {
+  background-image: none;
+}
+
+.btn-xlg {
+  // line-height: ensure even-numbered height of button next to large input
+  .button-size(@padding-xlarge-vertical; @padding-xlarge-horizontal; @font-size-xlarge; @line-height-xlarge; @btn-border-radius-xlarge);
+}
