@@ -4,6 +4,7 @@
 // 2. Fonts
 // 3. Containers
 // 4. customize colors
+// 5. buttons
 
 // =================================
 // a. Colors defined
@@ -31,6 +32,12 @@
 @jet         : #222222;
 @black       : #000000;
 
+
+
+// customize colors bootstrap
+@brand-primary: #183883;
+@brand-secondary: #E5E5E5;
+
 // =================================
 // b. customize variables
 // =================================
@@ -46,7 +53,7 @@
 
 // overwrite boostrap
 @font-family-base: @font-family-frutiger;
-@text-color: #645454;
+@text-color: @tuatara;
 
 // =============
 // 3. Containers
@@ -57,5 +64,12 @@
 // ===================
 // 4. customize colors
 // ===================
-@bg-color-topmenu : #183883;
+@bg-color-topmenu : @brand-primary;
 
+// ===========
+// 5. buttons
+// ===========
+@btn-font-weight : 300;
+@btn-border-radius-base: @border-radius-base;
+@btn-border-radius-large: @border-radius-base;
+@btn-border-radius-small: @border-radius-base;
