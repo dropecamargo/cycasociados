@@ -24,7 +24,11 @@ add_action( 'after_setup_theme', 'cycasociados_setup' );
 function child_enqueue_styles() {
 	$parent_style = 'parent-style';
 	wp_enqueue_style( $parent_style, get_template_directory_uri() . '/style.css' );
-	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( $parent_style ));
+
+	wp_enqueue_style( 'vendorcss', get_stylesheet_directory_uri() . '/css/vendor.min.css', array(), '1.0.0');
+
+	wp_enqueue_style( 'child-style', get_stylesheet_directory_uri() . '/style.css', array( $parent_style, 'vendorcss' ), '1.0.0');
+
 }
 add_action( 'wp_enqueue_scripts', 'child_enqueue_styles',99);
 
@@ -41,6 +45,7 @@ if ( get_stylesheet() !== get_template() ) {
 function cyc_get_file($file){
 	$file_parts = pathinfo($file);
 	$accepted_ext = array('jpg','img','png','css','js');
+
 	if( in_array($file_parts['extension'], $accepted_ext) ){
 		$file_path = get_stylesheet_directory() . $file;
 		if ( file_exists( $file_path ) ){
