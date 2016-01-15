@@ -8,5 +8,27 @@
 @{wrap-content} {
 	#services {
 		background-color: @brand-secondary;
+
+		#our_services_wrap {
+			.service-box {
+				.single-service {
+					position: relative;
+
+					> img {
+						display: inline-block;
+						position: relative;
+						margin-left: -35px;
+						width: 124.2%;
+						max-width: none;
+						margin-top: -40px;
+					}
+
+					.colored-text {
+						color: @brand-primary;
+						font-weight: 400;
+					}
+				}
+			}
+		}
 	}
 }
