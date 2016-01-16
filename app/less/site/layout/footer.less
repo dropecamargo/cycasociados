@@ -8,10 +8,21 @@
 	 color: @white;
 
 	 .social-icons {
-			a {
-				color: @white;
-				.parallax-one-footer-icons {
-					color: inherit;
+			line-height: 1;
+
+			> li {
+				padding: 0;
+
+				&:not(:first-child) {
+					padding-left: 15px;
+				}
+
+				a {
+					color: @white;
+					.parallax-one-footer-icons {
+						color: inherit;
+					}
+					.font-size-rem(25);
 				}
 			}
 	 }
@@ -29,6 +40,11 @@
 				.widget {
 					margin: 0;
 				}
+	 		}
+
+	 		.parallax_one_copyright_content {
+					.font-size-rem(14);
+					font-weight: 300;
 	 		}
 	 }
 }

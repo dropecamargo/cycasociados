@@ -13,6 +13,11 @@
 			.service-box {
 				.single-service {
 					position: relative;
+					.box-shadow( @box-shadow-box );
+
+					&:hover {
+						.box-shadow( @box-shadow-box-hover );
+					}
 
 					> img {
 						display: inline-block;

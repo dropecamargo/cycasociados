@@ -7,6 +7,37 @@
 
 @{wrap-content} {
 	#contactinfo {
-		background-color: @brand-secondary;
+		background-color: @white;
+
+		.section-overlay-layer {
+			padding-top: 0;
+		}
+
+		.contact-links {
+
+				.container-contact-item {
+					border-bottom: 1px solid @oil;
+					margin-bottom: 45px;
+				}
+
+				.contact-link-box {
+					text-align: left;
+
+					.icon-container {
+						margin: 0 15px 0 0;
+						display: inline-block;
+						vertical-align: middle;
+						line-height: 1;
+						.font-size-rem(25);
+					}
+
+					a {
+						padding: 0;
+						color: @text-color;
+						font-weight: 300;
+						.font-size-rem(18);
+					}
+				}
+		}
 	}
 }
