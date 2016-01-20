@@ -12,7 +12,7 @@
 </header>
 <!-- /END HOME / HEADER  -->
 
-<div id="content" class="content-warp">
+<div id="content" class="content-warp" style="background:#F2F2F2">
 	<div class="container">
 
 		<div id="primary" class="content-area col-md-12">
