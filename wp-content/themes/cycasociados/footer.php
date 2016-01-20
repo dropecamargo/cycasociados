@@ -52,7 +52,7 @@
 					/* COPYRIGHT */
 					$paralax_one_copyright = get_theme_mod('parallax_one_copyright','Themeisle');
 
-					echo '<div class="col-md-4 footer-seccions text-left">';
+					echo '<div class="col-xs-12 col-md-4 footer-seccions text-left">';
 					if( !empty($paralax_one_copyright) ){
 						echo '<span class="parallax_one_copyright_content">'.esc_attr($paralax_one_copyright).'</span>';
 					} elseif ( isset( $wp_customize )   ) {
@@ -76,7 +76,7 @@
 
 					$parallax_one_social_icons = get_theme_mod('parallax_one_social_icons',json_encode(array(array('icon_value' =>'icon-social-facebook' , 'link' => '#'),array('icon_value' =>'icon-social-twitter' , 'link' => '#'),array('icon_value' =>'icon-social-googleplus' , 'link' => '#'))));
 
-					echo '<div class="col-md-4 footer-seccions">';
+					echo '<div class="col-xs-12 col-md-4 footer-seccions">';
 					if( !empty( $parallax_one_social_icons ) ){
 
 						$parallax_one_social_icons_decoded = json_decode($parallax_one_social_icons);
@@ -96,11 +96,11 @@
 						}
 					}
 					echo '</div>';
-					echo '<div class="col-md-4 footer-seccions clearfix">';
+					echo '<div class="col-xs-12 col-md-4 footer-seccions clearfix">';
 
 					if( is_active_sidebar( 'footer-area' ) ){
 				?>
-						<div itemscope itemtype="http://schema.org/WPSideBar" role="complementary" id="sidebar-widgets-area-1" class="col-md-3 col-sm-6 col-xs-12 widget-box pull-right" aria-label="<?php esc_html_e('Widgets Area 1','parallax-one'); ?>">
+						<div itemscope itemtype="http://schema.org/WPSideBar" role="complementary" id="sidebar-widgets-area-1" class="widget-box pull-right" aria-label="<?php esc_html_e('Widgets Area 1','parallax-one'); ?>">
 							<?php
 								dynamic_sidebar( 'footer-area' );
 							?>

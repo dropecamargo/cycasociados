@@ -1,5 +1,6 @@
 // Table of Content
-// a. Colors defined
+// a. base styles
+// b. Colors defined
 // b. customize variables
 // 2. Fonts
 // 3. Containers
@@ -7,8 +8,15 @@
 // 5. buttons
 // 6. boxs & panels
 
+// ===============
+// a. base styles
+// ===============
+@border-radius-base: 3px;
+@border-radius-large: 4px;
+@border-radius-small: 2px;
+
 // =================================
-// a. Colors defined
+// b. Colors defined
 // =================================
 
 // grays scale colors
@@ -77,6 +85,9 @@
 @btn-border-radius-base: @border-radius-base;
 @btn-border-radius-large: @border-radius-base;
 @btn-border-radius-small: @border-radius-base;
+
+@btn-primary-bg: @brand-primary;
+@btn-primary-border: darken(@btn-primary-bg, 5%);
 
 // ================
 // 6. boxs & panels

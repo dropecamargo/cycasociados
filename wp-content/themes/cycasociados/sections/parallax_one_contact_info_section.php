@@ -63,7 +63,15 @@
 								</div><!-- .contact-links -->
 							</div>
 							<div class="col-md-6">
-								Formulario
+								<?php
+									$cycasociados_contact_form_shortcode = get_theme_mod('cycasociados_contact_form_shortcode');
+								?>
+								<?php
+									if(!empty($cycasociados_contact_form_shortcode)) {
+										echo do_shortcode( $cycasociados_contact_form_shortcode );
+									}
+								?>
+								<?php echo do_shortcode( '[pirate_forms]' ) ?>
 							</div>
 						</div>
 

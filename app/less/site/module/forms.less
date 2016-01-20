@@ -1,0 +1,17 @@
+// @author http://cycasociados.com.co
+// @frontend @krobing
+// Styles for forms
+// ----------------------
+
+// Styles general
+form {
+
+	input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="tel"], input[type="time"], input[type="week"], input[type="month"], input[type="datetime-local"], input[type="datetime"], input[type="date"], input[type="color"], textarea, select, .form-control {
+		border: 1px solid @base;
+	}
+
+	.placeholder(@gainsboro, ~"input:not([type='hidden'])" );
+	.placeholder(@gainsboro, textarea);
+	.placeholder(@gainsboro, select);
+	.placeholder(@gainsboro, ~".form-control");
+}
